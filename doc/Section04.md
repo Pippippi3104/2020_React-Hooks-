@@ -25,6 +25,11 @@
   npm install expo-cli
   expo start
   ```
+  * Delete .git file (then you can push folder)
+  ```
+  ls -a
+  rm -rf .git
+  ```
 
 ### [Return to Contents](#contents)
 
