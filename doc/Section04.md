@@ -38,5 +38,10 @@
 ## useState
 * ![Image](../src/images/Section04/useState001.png)
 
+* commands (Create React component)
+ ```
+ rfce
+ ```
+
 ### [Return to Contents](#contents)
 
