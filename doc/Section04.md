@@ -4,6 +4,7 @@
 
 # Contents
 * [Flow](#flow)
+* [useState](#useState)
 
 ### Pickup
 * 
@@ -12,8 +13,6 @@
 <a id = "flow">
 
 ## Flow
-* ![Image](../src/images/Section04/init001.png)
-
 * commands
   ```
   npm install expo
@@ -30,6 +29,14 @@
   ls -a
   rm -rf .git
   ```
+
+### [Return to Contents](#contents)
+
+
+<a id = "useState">
+
+## useState
+* ![Image](../src/images/Section04/useState001.png)
 
 ### [Return to Contents](#contents)
 
