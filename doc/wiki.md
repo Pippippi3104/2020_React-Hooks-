@@ -5,6 +5,7 @@
 * Section02:React Hooks について
 * Section03:環境設定
 * Section04:useStateに触れてみよう
+* Section05:useEffectを学ぶ
 
 ### Pickup
 * 
