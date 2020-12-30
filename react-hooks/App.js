@@ -3,6 +3,7 @@ import "./App.css";
 import Counter from "./component/Counter";
 import CounterHook from "./component/CounterHook";
 import FormHook from "./component/FormHook";
+import ItemHook from "./component/ItemHook";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Counter />
       <CounterHook />
       <FormHook />
+      <ItemHook />
     </div>
   );
 };
