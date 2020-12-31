@@ -6,6 +6,7 @@
 * Section03:環境設定
 * Section04:useStateに触れてみよう
 * Section05:useEffectを学ぶ
+* Section06:useContextを学ぶ
 
 ### Pickup
 * 
