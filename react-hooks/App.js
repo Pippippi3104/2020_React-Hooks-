@@ -1,5 +1,6 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import "./App.css";
+import ComponentC from "./component/ComponentC";
 import Counter from "./component/Counter";
 import CounterHook from "./component/CounterHook";
 import DataFeatch from "./component/DataFeatch";
@@ -9,17 +10,16 @@ import FormHook from "./component/FormHook";
 import ItemHook from "./component/ItemHook";
 import MouseEventEffect from "./component/MouseEventEffect";
 
+export const UserContext = createContext()
+
 function App() {
+  const [user, setUser] = useState({name: "yamada", age:"32"})
+
   return (
     <div className="App">
-      {/* <Counter />
-      <CounterHook />
-      <FormHook />
-      <ItemHook /> */}
-      {/* <EffectHook />
-      <MouseEventEffect /> */}
-      <DataFeatch />
-      <DataFetchById />
+      <UserContext.Providwe value={user}>
+        <ComponentC />
+      </UserContext.Providwe>
     </div>
   );
 };
