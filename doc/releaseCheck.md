@@ -7,6 +7,8 @@
   * Section06
 * v0.7.0
   * Section07
+* v0.8.0
+  * Section08
 
   
 
