@@ -1,5 +1,21 @@
+/* Section08 */
+import React from "react";
+import "./App.css";
+import WrapComponent from "./component_sec08/WrapComponent"
+
+function App() {
+  return (
+    <div className="App">
+      <WrapComponent />
+    </div>
+  );
+};
+
+export default App;
+
+
 /* Section07 */
-import React, { useEffect, useReducer, useState } from "react";
+/* import React, { useEffect, useReducer, useState } from "react";
 import "./App.css";
 import axios from "axios";
 
@@ -50,7 +66,7 @@ function App (){
   );
 };
 
-export default App;
+export default App; */
 
 
 /* Section07 */
