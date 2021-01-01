@@ -1,16 +1,28 @@
-import React from 'react'
-import { UserContext } from "../App"
+import React, { useContext } from 'react'
+import { LanguageContext, UserContext } from "../App"
 
 function ComponentF() {
+    const user = useContext(UserContext)
+    const language = useContext(LanguageContext)
+
     return (
         <div>
-            <UserContext.Consumer>
+            {user.name}: {language}
+            {/* <UserContext.Consumer>
                 {
                     user => {
-                        return <div>{user.name}</div>
+                        return (
+                            <languageContext.Consumer>
+                                {
+                                    language =>{
+                                        return <div>{user.name}: {language}</div>
+                                    }
+                                }
+                            </languageContext.Consumer>
+                        )
                     }
                 }
-            </UserContext.Consumer>
+            </UserContext.Consumer> */}
         </div>
     )
 }

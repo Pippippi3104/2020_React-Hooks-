@@ -11,15 +11,19 @@ import ItemHook from "./component/ItemHook";
 import MouseEventEffect from "./component/MouseEventEffect";
 
 export const UserContext = createContext()
+export const LanguageContext = createContext()
 
 function App() {
   const [user, setUser] = useState({name: "yamada", age:"32"})
+  const [language, setLanguage] = useState("日本語")
 
   return (
     <div className="App">
-      <UserContext.Providwe value={user}>
-        <ComponentC />
-      </UserContext.Providwe>
+      <UserContext.Provider value={user}>
+        <LanguageContext.Provider value={language} >
+          <ComponentC />
+        </LanguageContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 };
