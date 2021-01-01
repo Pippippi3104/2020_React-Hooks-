@@ -1,4 +1,45 @@
-import React, { createContext, useState } from "react";
+import React, { useReducer, createContext, useState } from "react";
+import "./App.css";
+import ComponentA from "./component_sec07/ComponentA";
+import ComponentB from "./component_sec07/ComponentB";
+import ComponentC from "./component_sec07/ComponentC";
+
+export const CountContext = createContext()
+const initialState = {
+  firstCounter: 0
+}
+const reducer = (state, action) => {
+  switch(action.type) {
+      case "increment1":
+          return {...state, firstCounter: state.firstCounter + action.value}
+      case "decrement1":
+          return {...state, firstCounter: state.firstCounter - action.value}
+      case "reset":
+          return initialState
+      default:
+          return state
+  }
+}
+
+function App (){
+  const [count, dispatch] = useReducer(reducer, initialState)
+
+  return (
+    <div className="App">
+      <h1>カウント: {count.firstCounter}</h1>
+      <CountContext.Provider value={{ countState: count, countDispatch: dispatch }} >
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+      </CountContext.Provider>
+    </div>
+  );
+};
+
+export default App;
+
+
+/* import React, { createContext, useState } from "react";
 import "./App.css";
 import CounterReducer from "./component/CounterReducer";
 
@@ -10,8 +51,7 @@ function App (){
   );
 };
 
-export default App;
-
+export default App; */
 
 
 /* Section06 */
