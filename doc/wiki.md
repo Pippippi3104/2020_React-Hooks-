@@ -7,6 +7,7 @@
 * Section04:useStateに触れてみよう
 * Section05:useEffectを学ぶ
 * Section06:useContextを学ぶ
+* Section07:useReducerを学ぶ
 
 ### Pickup
 * 
