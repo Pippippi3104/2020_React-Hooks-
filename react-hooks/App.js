@@ -1,5 +1,22 @@
 import React, { createContext, useState } from "react";
 import "./App.css";
+import CounterReducer from "./component/CounterReducer";
+
+function App (){
+  return (
+    <div className="App">
+      <CounterReducer />
+    </div>
+  );
+};
+
+export default App;
+
+
+
+/* Section06 */
+/* import React, { createContext, useState } from "react";
+import "./App.css";
 import ComponentC from "./component/ComponentC";
 import Counter from "./component/Counter";
 import CounterHook from "./component/CounterHook";
@@ -28,4 +45,4 @@ function App() {
   );
 };
 
-export default App;
+export default App; */
