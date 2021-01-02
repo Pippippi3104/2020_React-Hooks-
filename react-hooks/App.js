@@ -1,5 +1,60 @@
-/* Section09 */
+/* Section11 */
 import React from "react";
+import "./App.css";
+import Form from "./component_sec09-10-11/Form";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Custom Hook</h1>
+       <Form />
+    </div>
+  );
+};
+
+export default App;
+
+
+/* Section11 */
+/* import React from "react";
+import "./App.css";
+import DocTitleUpdateOne from "./component_sec09-10-11/DocTitleUpdateOne";
+import DocTitleUpdateTwo from "./component_sec09-10-11/DocTitleUpdateTwo";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Custom Hook</h1>
+      <DocTitleUpdateOne />
+      <DocTitleUpdateTwo />
+    </div>
+  );
+};
+
+export default App; */
+
+
+/* Section10 */
+/* import React from "react";
+import "./App.css";
+import Count from "./component_sec09/Count";
+import FocusInput from "./component_sec09/FocusInput";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>useRef</h1>
+      <FocusInput />
+      <Count />
+    </div>
+  );
+};
+
+export default App; */
+
+
+/* Section09 */
+/* import React from "react";
 import "./App.css";
 import Check from "./component_sec09/Check";
 
@@ -11,7 +66,7 @@ function App() {
   );
 };
 
-export default App;
+export default App; */
 
 
 /* Section08 */
