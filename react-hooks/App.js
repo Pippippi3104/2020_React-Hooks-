@@ -1,5 +1,24 @@
-/* Section09 */
+/* Section10 */
 import React from "react";
+import "./App.css";
+import Count from "./component_sec09/Count";
+import FocusInput from "./component_sec09/FocusInput";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>useRef</h1>
+      {/* <FocusInput /> */}
+      <Count />
+    </div>
+  );
+};
+
+export default App;
+
+
+/* Section09 */
+/* import React from "react";
 import "./App.css";
 import Check from "./component_sec09/Check";
 
@@ -11,7 +30,7 @@ function App() {
   );
 };
 
-export default App;
+export default App; */
 
 
 /* Section08 */
