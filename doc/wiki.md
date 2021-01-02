@@ -9,6 +9,7 @@
 * Section06:useContextを学ぶ
 * Section07:useReducerを学ぶ
 * Section08:useCallbackを学ぶ
+* Section09:useMemoを学ぶ
 
 ### Pickup
 * 

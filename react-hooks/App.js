@@ -1,5 +1,21 @@
-/* Section08 */
+/* Section09 */
 import React from "react";
+import "./App.css";
+import Check from "./component_sec09/Check";
+
+function App() {
+  return (
+    <div className="App">
+      <Check />
+    </div>
+  );
+};
+
+export default App;
+
+
+/* Section08 */
+/* import React from "react";
 import "./App.css";
 import WrapComponent from "./component_sec08/WrapComponent"
 
@@ -11,7 +27,7 @@ function App() {
   );
 };
 
-export default App;
+export default App; */
 
 
 /* Section07 */
