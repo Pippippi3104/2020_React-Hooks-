@@ -51,3 +51,22 @@
 
 - Hooks を呼び出すのはトップレベルのみ
 - Hooks を呼び出すのは React 関数内のみ
+
+## useEffect ?
+
+- 副作用(Side effect)の処理を関数コンポーネントで扱う
+  - (副作用とは、DOM の変更、API 通信、変数への代入 etc)
+- クラスコンポーネントでのライフサイクルメソッドに相当する
+  - componentDidMount
+  - compoenntDidUpdate
+  - componentWillUnmount
+
+## Others
+
+- useState に型を定義するかしないか
+  - 要素が一つ and ラベルが必要無い　 → 　型定義不要
+  - 要素が複数 or ラベルが必要　 → 　型定義必要
+
+## Links
+
+- [useState に配列の型を定義したい](https://qiita.com/macotok/items/6fdce8b90bef97588538#%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B32)
