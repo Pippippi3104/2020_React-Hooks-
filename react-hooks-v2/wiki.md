@@ -70,3 +70,4 @@
 ## Links
 
 - [useState に配列の型を定義したい](https://qiita.com/macotok/items/6fdce8b90bef97588538#%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B32)
+- [【React × TypeScript】input の入力値を取得したい時](https://awesome-linus.com/2019/12/29/react-typescript-get-input-value/)
