@@ -4,7 +4,7 @@ const MouseEventEffect: React.FC = () => {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
-  const getMousePosition: (e: any) => void = (e) => {
+  const getMousePosition: (this: Window, ev: MouseEvent) => void = (e) => {
     setX(e.clientX);
     setY(e.clientY);
   };

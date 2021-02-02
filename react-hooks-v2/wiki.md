@@ -61,6 +61,10 @@
   - compoenntDidUpdate
   - componentWillUnmount
 
+## Context ?
+
+- 「状態」と「状態を変更するメソッド」を Props を用いず、アプリケーション全体で取り回せるようにする
+
 ## Others
 
 - useState に型を定義するかしないか
