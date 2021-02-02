@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import "./App.css";
 import Counter from "./components/Counter";
+import CountReducer from "./components/CountReducer ";
 import DataFeatch from "./components/DataFeatch";
 import { DataFetchById } from "./components/DataFetchById";
 import Effect from "./components/Effect";
@@ -45,6 +46,8 @@ function App() {
           <ComponentC />
         </LanguageContext.Provider>
       </UserContext.Provider>
+      <hr />
+      <CountReducer />
     </div>
   );
 }

@@ -61,9 +61,25 @@
   - compoenntDidUpdate
   - componentWillUnmount
 
-## Context ?
+## useContext ?
 
 - 「状態」と「状態を変更するメソッド」を Props を用いず、アプリケーション全体で取り回せるようにする
+
+## useReducer ?
+
+- 状態管理用の Hook
+- useState に代替する
+  - useState は useReducer で内部実装されている
+- useReducer は、現在のステート値と dispatch 関数の 2 つを返す
+  ```
+  const [state, dispatch] = useReducer(reducer, initialState);
+  ```
+  - reducer: state を更新するための関数
+  - dispatch: reducer を実行するための呼び出し関数
+- dispatch(action)で実行する
+  - action は何をするかを示すオブジェクト
+    - type: increment
+    - payload: 0
 
 ## Others
 
