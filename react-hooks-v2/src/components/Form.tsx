@@ -18,12 +18,16 @@ const Form: React.FC = () => {
         <input
           type="text"
           value={name.firstName}
-          onChange={(e) => setName({ ...name, firstName: e.target.value })}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setName({ ...name, firstName: e.target.value })
+          }
         />
         <input
           type="text"
           value={name.lastName}
-          onChange={(e) => setName({ ...name, lastName: e.target.value })}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setName({ ...name, lastName: e.target.value })
+          }
         />
         <div></div>
       </form>

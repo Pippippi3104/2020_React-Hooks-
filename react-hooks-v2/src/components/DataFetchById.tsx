@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 export const DataFetchById = () => {
   const [post, setPost] = useState<any>(null);
   const [id, setId] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  const fetchData: () => Promise<void> = async () => {
+  const fetchData: () => Promise<void> = useCallback(async () => {
     setLoading(true);
     const response = await fetch(
       `https://jsonplaceholder.typicode.com/posts/${id}`
@@ -13,12 +13,11 @@ export const DataFetchById = () => {
     const item = await response.json();
     setPost(item);
     setLoading(false);
-  };
+  }, [id]);
 
   useEffect(() => {
     fetchData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [id]);
+  }, [fetchData]);
 
   return (
     <div>
