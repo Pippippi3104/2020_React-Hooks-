@@ -90,4 +90,18 @@
 ## Links
 
 - [useState に配列の型を定義したい](https://qiita.com/macotok/items/6fdce8b90bef97588538#%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B32)
-- [【React × TypeScript】input の入力値を取得したい時](https://awesome-linus.com/2019/12/29/react-typescript-get-input-value/)
+- [【React × TypeScript】input の入力値を取得したい時](https://awesome-linus.com/2019/12/29/react-typescript-get-input-value/)]
+- [【React】デフォルト値も undefined チェックもいらない createContext【Typescript】](https://qiita.com/johnmackay150/items/88654e5064290c24a32a#solution)
+
+  ```
+  function createCtx<ContextType>() {
+    const ctx = React.createContext<ContextType | undefined>(undefined);
+    function useCtx() {
+      const c = React.useContext(ctx);
+      if (!c) throw new Error("useCtx must be inside a Provider with a value");
+      return c;
+    }
+    return [useCtx, ctx.Provider] as const;
+  }
+  const [useAuth, SetAuthProvider] = createCtx<authContextType>();
+  ```
